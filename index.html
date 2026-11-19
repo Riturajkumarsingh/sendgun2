@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sendgun – Fast, Reliable & DLT-Compliant Bulk SMS Platform built for Indian businesses." />
+  <title>Sendgun – DLT-Compliant Bulk SMS Platform</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       UNIFIED HEADER + HERO WRAPPER (Shared Hero Background & Layers)
+  ══════════════════════════════════════════════════════════════════ -->
+  <header class="hero-wrapper">
+
+    <!-- Background Overlay Layers (User-Provided Assets) -->
+    <div class="hero-wrapper__bg" aria-hidden="true">
+      <div class="hero-wrapper__left-glow"></div>
+      <div class="hero-wrapper__bg-arrows hero-wrapper__bg-arrows--right">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero-wrapper__bg-arrows hero-wrapper__bg-arrows--left">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <img src="assets/images/hero-trophy.png" alt="" class="hero-wrapper__trophy d-none d-lg-block" />
+    </div>
+
+    <!-- ── NAVBAR ── -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar" id="mainNavbar">
+      <div class="container">
+
+        <!-- Official Brand Logo -->
+        <a class="navbar-brand p-0" href="#" aria-label="Sendgun Home">
+          <img src="assets/images/dashboard/sendgun-logo-dark.png" alt="Sendgun" class="site-navbar__logo-img" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links & CTA -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#industries">Use Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#understanding-core">SMS / Bulk / API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why-sendgun">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#getting-started">API</a>
+            </li>
+          </ul>
+
+          <div class="mt-3 mt-lg-0">
+            <a href="#leadForm" class="btn-pill btn-pill--lime">
+              Get Demo
+              <span class="btn-pill__arrow" aria-hidden="true">
+                <i class="bi bi-arrow-up-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- ── HERO CONTENT ── -->
+    <section class="hero" aria-label="Hero Banner">
+      <div class="container">
+        <div class="row align-items-start g-4">
+
+          <!-- Left Column: Copy & Actions -->
+          <div class="col-lg-5 hero__left">
+            <div class="hero__badge">
+              <span class="hero__badge-dot" aria-hidden="true"></span>
+              Live – 99.9% uptime SLA
+            </div>
+
+            <h1 class="hero__title">
+              <span class="hero__title-line">India's Trusted <strong>Bulk SMS &amp; SMS API</strong></span>
+              Platform
+            </h1>
+
+            <p class="hero__description">
+              Fast, secure and scalable Bulk SMS and SMS API solutions for OTPs, alerts, transactional and promotional messaging. Deliver messages instantly with high-speed routing and 99.9% uptime reliability.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#leadForm" class="btn-pill btn-pill--lime">
+                Get Started for Free
+                <span class="btn-pill__arrow" aria-hidden="true">
+                  <i class="bi bi-arrow-up-right"></i>
+                </span>
+              </a>
+
+              <a href="#leadForm" class="btn-pill btn-pill--outline">
+                Contact Sales
+                <span class="btn-pill__arrow" aria-hidden="true">
+                  <i class="bi bi-arrow-up-right"></i>
+                </span>
+              </a>
+            </div>
+
+            <p class="hero__trust-note">
+              Trusted by <strong>10,000+</strong> businesses for reliable Bulk SMS communication across India.
+            </p>
+          </div>
+
+          <!-- Center Column: Phone Illustration & Badges (User Image 2) -->
+          <div class="col-lg-3 hero__media">
+            <div class="hero__illustration-wrap">
+              <!-- Floating Callout Badges -->
+              <span class="hero__float-badge hero__float-badge--api">
+                Secure SMS API
+              </span>
+              <span class="hero__float-badge hero__float-badge--delivery">
+                Fast SMS Delivery
+              </span>
+              <span class="hero__float-badge hero__float-badge--rate">
+                High Delivery Success Rate
+              </span>
+
+              <!-- Phone Illustration Image -->
+              <img src="assets/images/hero-phone-illustration.png" alt="Sendgun Bulk SMS on smartphone"
+                class="hero__illustration-img" />
+            </div>
+          </div>
+
+          <!-- Right Column: Lead Capture Form Card -->
+          <div class="col-lg-4 hero__form-col" id="leadForm">
+            <div class="lead-card">
+              <!-- Corner Cross Decoration -->
+              <span class="lead-card__corner-cross d-none d-lg-block" aria-hidden="true"></span>
+
+              <div class="lead-card__header">
+                <h2 class="lead-card__title">
+                  Start today and claim <span>10,000</span><br />
+                  free credits.
+                </h2>
+              </div>
+
+              <form action="#" method="post" novalidate>
+                <div class="mb-2">
+                  <label class="form-label" for="leadName">
+                    Full Name <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" class="form-control" id="leadName" placeholder="e.g., Harpreet Singh"
+                    autocomplete="name" required />
+                </div>
+
+                <div class="mb-2">
+                  <label class="form-label" for="leadEmail">
+                    Email <span class="text-danger">*</span>
+                  </label>
+                  <input type="email" class="form-control" id="leadEmail" placeholder="name@gmail.com"
+                    autocomplete="email" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="leadPhone">
+                    Phone Number <span class="text-danger">*</span>
+                  </label>
+                  <input type="tel" class="form-control" id="leadPhone" placeholder="+91 xxxxxxxxxx" autocomplete="tel"
+                    required />
+                </div>
+
+                <button type="submit" class="lead-card__submit">Submit</button>
+              </form>
+
+              <!-- Trustpilot & Google Ratings -->
+              <div class="lead-card__reviews">
+                <div class="review-item">
+                  <div class="review-item__brand review-item__brand--trustpilot">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i> Trustpilot
+                  </div>
+                  <div class="review-item__stars review-item__stars--tp" aria-label="5 out of 5 stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                  </div>
+                  <div class="review-item__score">Trustscore 4.8</div>
+                </div>
+
+                <div class="review-divider" aria-hidden="true"></div>
+
+                <div class="review-item">
+                  <div class="review-item__brand" aria-label="Google">
+                    <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span
+                      class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+                  </div>
+                  <div class="review-item__stars review-item__stars--google" aria-label="5 out of 5 stars">
+                    ★★★★★
+                  </div>
+                  <div class="review-item__score">Google Rating 4.8</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BOTTOM CURVED STATS NOTCH ── -->
+    <div class="stats-notch-wrap">
+      <div class="container">
+        <div class="stats-notch">
+          <div class="row g-2 align-items-center">
+            <div class="col-4 stat-box">
+              <div class="stat-box__value">1M+</div>
+              <div class="stat-box__label">Developers &amp; Businesses</div>
+            </div>
+            <div class="col-4 stat-box">
+              <div class="stat-box__value">98%</div>
+              <div class="stat-box__label">SMS Open Rate</div>
+            </div>
+            <div class="col-4 stat-box">
+              <div class="stat-box__value">99.9%</div>
+              <div class="stat-box__label">Uptime SLA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       PLATFORM FEATURES SECTION
+  ══════════════════════════════════════════════════════════════════ -->
+  <main>
+    <section class="features-section" id="features" aria-label="Platform Features">
+      <div class="container">
+
+        <div class="row g-4 align-items-stretch">
+
+          <!-- 1. Intro Block (Top-Left Cell) -->
+          <div class="col-lg-4 col-md-6">
+            <div class="features-intro">
+              <span class="features-intro__pill"><span>Platform Features</span></span>
+              <h2 class="features-intro__title">
+                Everything You Need to<br />
+                Communicate at Scale
+              </h2>
+              <p class="features-intro__desc">
+                A complete SMS infrastructure built for Indian businesses — from single-click campaigns to enterprise API integrations.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Unicode & Regional Languages (Top-Middle Card - Blue) -->
+          <div class="col-lg-4 col-md-6">
+            <article class="feature-card feature-card--blue">
+              <div class="feature-card__icon feature-card__icon--blue" aria-hidden="true">
+                <img src="assets/images/icons/icon-unicode.png" alt=""
+                  class="feature-card__img feature-card__img--white" />
+              </div>
+              <h3 class="feature-card__title">Unicode &amp; Regional Languages</h3>
+              <p class="feature-card__desc">
+                Send messages in Hindi and other regional languages to connect better with
+                local audiences across India — in the language they prefer.
+              </p>
+            </article>
+          </div>
+
+          <!-- 3. Enterprise-Grade Security (Top-Right Card - White) -->
+          <div class="col-lg-4 col-md-6">
+            <article class="feature-card feature-card--white">
+              <div class="feature-card__icon feature-card__icon--gray" aria-hidden="true">
+                <img src="assets/images/icons/icon-security.png" alt="" class="feature-card__img" />
+              </div>
+              <h3 class="feature-card__title">Enterprise-Grade Security</h3>
+              <p class="feature-card__desc">
+                Support for two-factor authentication (2FA), OTP verification and sender ID
+                verification. Keep your communications safe, secure and auditable.
+              </p>
+            </article>
+          </div>
+
+          <!-- 4. SMS Rest API (Bottom-Left Card - Blue) -->
+          <div class="col-lg-4 col-md-6">
+            <article class="feature-card feature-card--blue">
+              <div class="feature-card__icon feature-card__icon--blue" aria-hidden="true">
+                <!-- Exact Gear + API Icon -->
+                <svg class="feature-card__svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor"
+                    d="M13.6 2.5h4.8l.7 2.9c.7.2 1.4.5 2 .9l2.6-1.5 3.4 3.4-1.5 2.6c.4.6.7 1.3.9 2l2.9.7v4.8l-2.9.7c-.2.7-.5 1.4-.9 2l1.5 2.6-3.4 3.4-2.6-1.5c-.6.4-1.3.7-2 .9l-.7 2.9h-4.8l-.7-2.9c-.7-.2-1.4-.5-2-.9l-2.6 1.5-3.4-3.4 1.5-2.6c-.4-.6-.7-1.3-.9-2l-2.9-.7v-4.8l2.9-.7c.2-.7.5-1.4.9-2L4.9 8.2l3.4-3.4 2.6 1.5c.6-.4 1.3-.7 2-.9l.7-2.9Z" />
+                  <text x="16" y="18.6" text-anchor="middle" font-family="Inter, sans-serif" font-size="7.4"
+                    font-weight="800" fill="#1B5CF8">API</text>
+                </svg>
+              </div>
+              <h3 class="feature-card__title">SMS Rest API</h3>
+              <p class="feature-card__desc">
+                Plug-and-play REST API with comprehensive documentation, server-side SDKs
+                for PHP, Python, Node.js and more. Integrate in minutes, not days.
+              </p>
+            </article>
+          </div>
+
+          <!-- 5. Bulk SMS Dashboard (Bottom-Middle Card - White) -->
+          <div class="col-lg-4 col-md-6">
+            <article class="feature-card feature-card--white">
+              <div class="feature-card__icon feature-card__icon--gray" aria-hidden="true">
+                <img src="assets/images/icons/icon-dashboard.png" alt="" class="feature-card__img" />
+              </div>
+              <h3 class="feature-card__title">Bulk SMS Dashboard</h3>
+              <p class="feature-card__desc">
+                Send thousands of messages instantly with just a few clicks. No technical
+                knowledge required — a clean interface for marketers and operations teams alike.
+              </p>
+            </article>
+          </div>
+
+          <!-- 6. 100% DLT Compliant (Bottom-Right Card - Blue) -->
+          <div class="col-lg-4 col-md-6">
+            <article class="feature-card feature-card--blue">
+              <div class="feature-card__icon feature-card__icon--blue" aria-hidden="true">
+                <!-- Exact Document + Compliance Shield Check Icon -->
+                <svg class="feature-card__svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor"
+                    d="M7.5 3A2.5 2.5 0 0 0 5 5.5v20A2.5 2.5 0 0 0 7.5 28h10.2a8.2 8.2 0 0 1-1.9-5.3v-4.1c0-.9.6-1.7 1.4-2l4.8-1.7V10L16.5 3H7.5Zm1.7 7.2h7.6a1 1 0 1 1 0 2H9.2a1 1 0 1 1 0-2Zm0 4.2h6.2a1 1 0 1 1 0 2H9.2a1 1 0 1 1 0-2Zm0 4.2h4.6a1 1 0 1 1 0 2H9.2a1 1 0 1 1 0-2Z" />
+                  <path fill="currentColor"
+                    d="M23 15.8l5.2 1.8c.5.2.8.6.8 1.1v3.8c0 3.7-2.4 6.5-6 7.7-3.6-1.2-6-4-6-7.7v-3.8c0-.5.3-.9.8-1.1l5.2-1.8Z" />
+                  <path d="M20.4 22.8l1.8 1.8 3.6-3.7" fill="none" stroke="#1B5CF8" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 class="feature-card__title">100% DLT Compliant</h3>
+              <p class="feature-card__desc">
+                Fully compliant with TRAI's DLT regulations. We assist with your DLT
+                registration to ensure smooth message delivery and help your business avoid penalties.
+              </p>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         TRUST HIGHLIGHTS MARQUEE STRIP (#2656F6 · 100px)
+    ══════════════════════════════════════════════════════════════════ -->
+    <section class="ticker-strip" aria-label="Key Platform Highlights">
+      <div class="ticker-strip__viewport">
+
+        <!-- Track 1 (Primary) -->
+        <ul class="ticker-strip__track">
+          <li class="ticker-strip__item">
+            <svg class="ticker-strip__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <line x1="18" y1="18" x2="10.5" y2="8.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="26.5" y2="7.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="7.5" y2="23.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="18" y2="29" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="28.5" y2="24" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="18" cy="18" r="5.2" fill="#FFFFFF" />
+              <circle cx="10.5" cy="8.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="26.5" cy="7.5" r="2.9" fill="#FFFFFF" />
+              <circle cx="7.5" cy="23.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="18" cy="29" r="2.3" fill="#FFFFFF" />
+              <circle cx="28.5" cy="24" r="2.7" fill="#FFFFFF" />
+            </svg>
+            <span class="ticker-strip__text">Direct Operator Connections</span>
+          </li>
+
+          <li class="ticker-strip__item">
+            <svg class="ticker-strip__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <line x1="18" y1="18" x2="10.5" y2="8.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="26.5" y2="7.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="7.5" y2="23.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="18" y2="29" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="28.5" y2="24" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="18" cy="18" r="5.2" fill="#FFFFFF" />
+              <circle cx="10.5" cy="8.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="26.5" cy="7.5" r="2.9" fill="#FFFFFF" />
+              <circle cx="7.5" cy="23.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="18" cy="29" r="2.3" fill="#FFFFFF" />
+              <circle cx="28.5" cy="24" r="2.7" fill="#FFFFFF" />
+            </svg>
+            <span class="ticker-strip__text">100% DLT Compliant</span>
+          </li>
+
+          <li class="ticker-strip__item">
+            <svg class="ticker-strip__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <line x1="18" y1="18" x2="10.5" y2="8.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="26.5" y2="7.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="7.5" y2="23.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="18" y2="29" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="28.5" y2="24" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="18" cy="18" r="5.2" fill="#FFFFFF" />
+              <circle cx="10.5" cy="8.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="26.5" cy="7.5" r="2.9" fill="#FFFFFF" />
+              <circle cx="7.5" cy="23.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="18" cy="29" r="2.3" fill="#FFFFFF" />
+              <circle cx="28.5" cy="24" r="2.7" fill="#FFFFFF" />
+            </svg>
+            <span class="ticker-strip__text">Enterprise-Grade Security</span>
+          </li>
+
+          <li class="ticker-strip__item">
+            <svg class="ticker-strip__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <line x1="18" y1="18" x2="10.5" y2="8.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="26.5" y2="7.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="7.5" y2="23.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="18" y2="29" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="28.5" y2="24" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="18" cy="18" r="5.2" fill="#FFFFFF" />
+              <circle cx="10.5" cy="8.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="26.5" cy="7.5" r="2.9" fill="#FFFFFF" />
+              <circle cx="7.5" cy="23.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="18" cy="29" r="2.3" fill="#FFFFFF" />
+              <circle cx="28.5" cy="24" r="2.7" fill="#FFFFFF" />
+            </svg>
+            <span class="ticker-strip__text">24/7 Customer Support</span>
+          </li>
+        </ul>
+
+        <!-- Track 2 (Duplicate for seamless infinite loop) -->
+        <ul class="ticker-strip__track" aria-hidden="true">
+          <li class="ticker-strip__item">
+            <svg class="ticker-strip__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="18" y1="18" x2="10.5" y2="8.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="26.5" y2="7.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="7.5" y2="23.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="18" y2="29" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="28.5" y2="24" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="18" cy="18" r="5.2" fill="#FFFFFF" />
+              <circle cx="10.5" cy="8.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="26.5" cy="7.5" r="2.9" fill="#FFFFFF" />
+              <circle cx="7.5" cy="23.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="18" cy="29" r="2.3" fill="#FFFFFF" />
+              <circle cx="28.5" cy="24" r="2.7" fill="#FFFFFF" />
+            </svg>
+            <span class="ticker-strip__text">Direct Operator Connections</span>
+          </li>
+
+          <li class="ticker-strip__item">
+            <svg class="ticker-strip__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="18" y1="18" x2="10.5" y2="8.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="26.5" y2="7.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="7.5" y2="23.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="18" y2="29" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="28.5" y2="24" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="18" cy="18" r="5.2" fill="#FFFFFF" />
+              <circle cx="10.5" cy="8.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="26.5" cy="7.5" r="2.9" fill="#FFFFFF" />
+              <circle cx="7.5" cy="23.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="18" cy="29" r="2.3" fill="#FFFFFF" />
+              <circle cx="28.5" cy="24" r="2.7" fill="#FFFFFF" />
+            </svg>
+            <span class="ticker-strip__text">100% DLT Compliant</span>
+          </li>
+
+          <li class="ticker-strip__item">
+            <svg class="ticker-strip__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="18" y1="18" x2="10.5" y2="8.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="26.5" y2="7.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="7.5" y2="23.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="18" y2="29" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="28.5" y2="24" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="18" cy="18" r="5.2" fill="#FFFFFF" />
+              <circle cx="10.5" cy="8.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="26.5" cy="7.5" r="2.9" fill="#FFFFFF" />
+              <circle cx="7.5" cy="23.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="18" cy="29" r="2.3" fill="#FFFFFF" />
+              <circle cx="28.5" cy="24" r="2.7" fill="#FFFFFF" />
+            </svg>
+            <span class="ticker-strip__text">Enterprise-Grade Security</span>
+          </li>
+
+          <li class="ticker-strip__item">
+            <svg class="ticker-strip__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="18" y1="18" x2="10.5" y2="8.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="26.5" y2="7.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="7.5" y2="23.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="18" y2="29" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <line x1="18" y1="18" x2="28.5" y2="24" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="18" cy="18" r="5.2" fill="#FFFFFF" />
+              <circle cx="10.5" cy="8.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="26.5" cy="7.5" r="2.9" fill="#FFFFFF" />
+              <circle cx="7.5" cy="23.5" r="2.7" fill="#FFFFFF" />
+              <circle cx="18" cy="29" r="2.3" fill="#FFFFFF" />
+              <circle cx="28.5" cy="24" r="2.7" fill="#FFFFFF" />
+            </svg>
+            <span class="ticker-strip__text">24/7 Customer Support</span>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SENDGUN DASHBOARD PREVIEW SECTION
+    ══════════════════════════════════════════════════════════════════ -->
+    <section class="dashboard-section" id="dashboard" aria-label="Sendgun Live Dashboard Preview">
+
+      <!-- Floating Background Decorative Icons (User Assets) -->
+      <img src="assets/images/dashboard/float-whatsapp.png" alt="" aria-hidden="true"
+           class="dashboard-section__float dashboard-section__float--tl d-none d-xl-block" />
+      <img src="assets/images/dashboard/float-plane.png" alt="" aria-hidden="true"
+           class="dashboard-section__float dashboard-section__float--bl d-none d-xl-block" />
+      <img src="assets/images/dashboard/float-cloud.png" alt="" aria-hidden="true"
+           class="dashboard-section__float dashboard-section__float--tr d-none d-xl-block" />
+      <img src="assets/images/dashboard/float-chat.png" alt="" aria-hidden="true"
+           class="dashboard-section__float dashboard-section__float--br d-none d-xl-block" />
+
+      <div class="container position-relative">
+        <div class="dashboard-card">
+
+          <!-- Dashboard Top Header: Logo + "Dashboard" -->
+          <div class="dashboard-card__header">
+            <img src="assets/images/dashboard/sendgun-logo-dark.png" alt="Sendgun" class="dashboard-card__logo" />
+            <h2 class="dashboard-card__title">Dashboard</h2>
+          </div>
+
+          <!-- Dashboard Inner Body -->
+          <div class="dashboard-card__body">
+
+            <!-- 4 KPI Metric Cards -->
+            <div class="row g-3 dashboard-kpis">
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-box">
+                  <div class="kpi-box__label">Messages Sent</div>
+                  <div class="kpi-box__value">2.4M</div>
+                  <div class="kpi-box__trend">&uarr; 12% this month</div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-box">
+                  <div class="kpi-box__label">Delivery Rate</div>
+                  <div class="kpi-box__value">98.7%</div>
+                  <div class="kpi-box__trend">&uarr; 0.3% vs last week</div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-box">
+                  <div class="kpi-box__label">Open Rate</div>
+                  <div class="kpi-box__value">97.1%</div>
+                  <div class="kpi-box__trend">&uarr; industry-leading</div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-box">
+                  <div class="kpi-box__label">Customer Satisfaction</div>
+                  <div class="kpi-box__value">4.9/5</div>
+                  <div class="kpi-box__trend">&uarr; Trusted by businesses</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7-Day Activity Bar Chart -->
+            <div class="dashboard-chart" role="img" aria-label="Weekly SMS delivery volume peaking on Thursday">
+              <div class="chart-col">
+                <div class="chart-col__bar-wrap">
+                  <div class="chart-col__bar" style="--bar-h: 60%;"></div>
+                </div>
+                <span class="chart-col__day">Mon</span>
+              </div>
+
+              <div class="chart-col">
+                <div class="chart-col__bar-wrap">
+                  <div class="chart-col__bar" style="--bar-h: 84%;"></div>
+                </div>
+                <span class="chart-col__day">Tue</span>
+              </div>
+
+              <div class="chart-col">
+                <div class="chart-col__bar-wrap">
+                  <div class="chart-col__bar" style="--bar-h: 60%;"></div>
+                </div>
+                <span class="chart-col__day">Wed</span>
+              </div>
+
+              <div class="chart-col chart-col--active">
+                <div class="chart-col__bar-wrap">
+                  <div class="chart-col__bar" style="--bar-h: 100%;"></div>
+                </div>
+                <span class="chart-col__day">Thu</span>
+              </div>
+
+              <div class="chart-col">
+                <div class="chart-col__bar-wrap">
+                  <div class="chart-col__bar" style="--bar-h: 60%;"></div>
+                </div>
+                <span class="chart-col__day">Fri</span>
+              </div>
+
+              <div class="chart-col">
+                <div class="chart-col__bar-wrap">
+                  <div class="chart-col__bar" style="--bar-h: 40%;"></div>
+                </div>
+                <span class="chart-col__day">Sat</span>
+              </div>
+
+              <div class="chart-col">
+                <div class="chart-col__bar-wrap">
+                  <div class="chart-col__bar" style="--bar-h: 31%;"></div>
+                </div>
+                <span class="chart-col__day">Sun</span>
+              </div>
+            </div>
+
+            <!-- Bottom Live Status Bar -->
+            <div class="dashboard-card__status">
+              <i class="bi bi-patch-check-fill dashboard-card__status-icon" aria-hidden="true"></i>
+              <span>All systems operational &middot; Last updated 2 minutes ago</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         INDUSTRY SOLUTIONS SECTION ("Built for Every Industry")
+    ══════════════════════════════════════════════════════════════════ -->
+    <section class="industries-section" id="industries" aria-label="Industry Solutions">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="industries-header text-center">
+          <span class="industries-eyebrow">Industry Solutions</span>
+          <h2 class="industries-heading">Built for Every Industry</h2>
+          <p class="industries-subtitle">
+            Sendgun powers communication for businesses across all major verticals in India.
+          </p>
+        </div>
+
+        <!-- Central Sendgun Hub Badge (3-Ring Nested Frame) -->
+        <div class="industries-hub">
+          <div class="industries-hub__outer">
+            <div class="industries-hub__middle">
+              <div class="industries-hub__inner">
+                <img src="assets/images/industries/hub-logo.png" alt="Sendgun" class="industries-hub__logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connected Tree Architecture (Desktop SVG Lines + 5 Industry Cards) -->
+        <div class="industries-tree">
+
+          <!-- Desktop Orthogonal Connector Lines -->
+          <svg class="industries-tree__lines d-none d-lg-block" viewBox="0 0 1000 500"
+               preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Line 1: Hub -> E-commerce & Retail (center x=135) -->
+            <path d="M 476 0 V 58 H 135 V 175" stroke="#5B80F4" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+            <!-- Line 2: Hub -> Education (center x=317.5, passes cleanly through gap) -->
+            <path d="M 488 0 V 74 H 317.5 V 395" stroke="#5B80F4" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+            <!-- Line 3: Hub -> BFSI & Fintech (center x=500) -->
+            <path d="M 500 0 V 175" stroke="#5B80F4" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+            <!-- Line 4: Hub -> Hospitality & Travel (center x=682.5, passes cleanly through gap) -->
+            <path d="M 512 0 V 74 H 682.5 V 395" stroke="#5B80F4" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+            <!-- Line 5: Hub -> Healthcare (center x=865) -->
+            <path d="M 524 0 V 58 H 865 V 175" stroke="#5B80F4" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+          </svg>
+
+          <!-- Row 1: 3 Cards -->
+          <div class="industries-row industries-row--top">
+            <article class="industry-card">
+              <div class="industry-card__icon">
+                <img src="assets/images/industries/icon-ecommerce.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="industry-card__title">E-commerce &amp; Retail</h3>
+              <p class="industry-card__desc">
+                Order confirmations, shipping updates, abandoned cart reminders and discount
+                codes that convert.
+              </p>
+            </article>
+
+            <article class="industry-card">
+              <div class="industry-card__icon">
+                <img src="assets/images/industries/icon-bfsi.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="industry-card__title">BFSI &amp; Fintech</h3>
+              <p class="industry-card__desc">
+                OTPs, balance alerts, payment reminders, fraud notifications and transaction
+                failure alerts delivered instantly.
+              </p>
+            </article>
+
+            <article class="industry-card">
+              <div class="industry-card__icon">
+                <img src="assets/images/industries/icon-healthcare.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="industry-card__title">Healthcare</h3>
+              <p class="industry-card__desc">
+                Appointment confirmations, prescription reminders and health check-up
+                notifications for patients and clinics.
+              </p>
+            </article>
+          </div>
+
+          <!-- Row 2: 2 Offset-Centered Cards -->
+          <div class="industries-row industries-row--bottom">
+            <article class="industry-card">
+              <div class="industry-card__icon">
+                <img src="assets/images/industries/icon-education.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="industry-card__title">Education</h3>
+              <p class="industry-card__desc">
+                Exam schedules, fee payment reminders, result announcements and campus event
+                communications.
+              </p>
+            </article>
+
+            <article class="industry-card">
+              <div class="industry-card__icon">
+                <img src="assets/images/industries/icon-hospitality.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="industry-card__title">Hospitality &amp; Travel</h3>
+              <p class="industry-card__desc">
+                Booking confirmations, itinerary updates, check-in reminders and promotional
+                offers for travellers.
+              </p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SMS IMPACT PHOTO BANNER SECTION (719px · Glassmorphism Metrics)
+    ══════════════════════════════════════════════════════════════════ -->
+    <section class="impact-banner" aria-label="SMS Engagement Performance Metrics">
+      <div class="container impact-banner__content">
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="impact-card">
+              <p class="impact-card__text">
+                SMS messages are opened higher than any other digital channel
+              </p>
+              <div class="impact-card__value">98%</div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="impact-card">
+              <p class="impact-card__text">
+                average time to open &mdash; 90% of SMS messages are read within 3 minutes of receipt
+              </p>
+              <div class="impact-card__value">3 min</div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="impact-card">
+              <p class="impact-card__text">
+                higher conversion rates compared with other digital marketing channels
+              </p>
+              <div class="impact-card__value">60%</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         WHY SENDGUN SECTION ("The Smarter Choice for Business SMS")
+    ══════════════════════════════════════════════════════════════════ -->
+    <section class="why-section" id="why-sendgun" aria-label="Why Sendgun">
+      <div class="container">
+
+        <!-- Centered Section Header -->
+        <div class="why-header text-center">
+          <span class="why-eyebrow"><span>Why Sendgun</span></span>
+          <h2 class="why-heading">The Smarter Choice for Business SMS</h2>
+          <p class="why-subtitle">
+            Trusted by over a million developers and businesses across India for a reason.
+          </p>
+        </div>
+
+        <!-- Bento Card Grid (Row 1: 4 Cards · Row 2: 2 Cards + 1 Double-Wide Featured Card) -->
+        <div class="row g-4">
+
+          <!-- Card 1: Instant Delivery -->
+          <div class="col-lg-3 col-md-6">
+            <article class="why-card">
+              <div class="why-card__icon">
+                <img src="assets/images/why-sendgun/icon-instant-delivery.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="why-card__title">Instant Delivery</h3>
+              <p class="why-card__desc">
+                Messages reach customers in seconds, ensuring time-sensitive updates, OTPs
+                and promotional offers are delivered precisely when it matters most.
+              </p>
+              <a href="#leadForm" class="why-card__btn">Chat With Executive</a>
+            </article>
+          </div>
+
+          <!-- Card 2: Unmatched Open Rates -->
+          <div class="col-lg-3 col-md-6">
+            <article class="why-card">
+              <div class="why-card__icon">
+                <img src="assets/images/why-sendgun/icon-open-rates.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="why-card__title">Unmatched Open Rates</h3>
+              <p class="why-card__desc">
+                SMS achieves a 98% open rate, with 90% read within the first three minutes
+                far outperforming email, push notifications and social media.
+              </p>
+              <a href="#leadForm" class="why-card__btn">Chat With Executive</a>
+            </article>
+          </div>
+
+          <!-- Card 3: Scalable Infrastructure -->
+          <div class="col-lg-3 col-md-6">
+            <article class="why-card">
+              <div class="why-card__icon">
+                <img src="assets/images/why-sendgun/icon-scalable.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="why-card__title">Scalable Infrastructure</h3>
+              <p class="why-card__desc">
+                From a few hundred to tens of millions of messages our infrastructure
+                handles any volume effortlessly, with no delays or system failures.
+              </p>
+              <a href="#leadForm" class="why-card__btn">Chat With Executive</a>
+            </article>
+          </div>
+
+          <!-- Card 4: Cost-Effective -->
+          <div class="col-lg-3 col-md-6">
+            <article class="why-card">
+              <div class="why-card__icon">
+                <img src="assets/images/why-sendgun/icon-cost-effective.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="why-card__title">Cost-Effective</h3>
+              <p class="why-card__desc">
+                Reduce operational costs by automating communication. No manual effort, no
+                overhead just reliable, high-volume messaging at a fraction of traditional
+                costs.
+              </p>
+              <a href="#leadForm" class="why-card__btn">Chat With Executive</a>
+            </article>
+          </div>
+
+          <!-- Card 5: Widest Reach in India -->
+          <div class="col-lg-3 col-md-6">
+            <article class="why-card">
+              <div class="why-card__icon">
+                <img src="assets/images/why-sendgun/icon-widest-reach.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="why-card__title">Widest Reach in India</h3>
+              <p class="why-card__desc">
+                SMS reaches every mobile phone including basic feature phones unlike
+                email or app-based channels. Connect with customers across every corner of
+                India.
+              </p>
+              <a href="#leadForm" class="why-card__btn">Chat With Executive</a>
+            </article>
+          </div>
+
+          <!-- Card 6: Advanced Analytics -->
+          <div class="col-lg-3 col-md-6">
+            <article class="why-card">
+              <div class="why-card__icon">
+                <img src="assets/images/why-sendgun/icon-analytics.png" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="why-card__title">Advanced Analytics</h3>
+              <p class="why-card__desc">
+                Monitor delivery, open rates and campaign performance with real-time
+                analytics and detailed reporting for smarter business decisions.
+              </p>
+              <a href="#leadForm" class="why-card__btn">Chat With Executive</a>
+            </article>
+          </div>
+
+          <!-- Card 7 (2-Col Wide Featured Card): Dedicated Account Management -->
+          <div class="col-lg-6 col-md-12">
+            <article class="why-card why-card--featured">
+              <div class="why-card__featured-content">
+                <div class="why-card__icon">
+                  <img src="assets/images/why-sendgun/icon-account-mgmt.png" alt="" aria-hidden="true" />
+                </div>
+                <h3 class="why-card__title">Dedicated Account Management</h3>
+                <p class="why-card__desc">
+                  Every business on a paid plan receives a dedicated account manager for
+                  onboarding support, DLT assistance and ongoing campaign optimisation.
+                </p>
+                <a href="#leadForm" class="why-card__btn why-card__btn--white">Chat With Executive</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         UNDERSTANDING THE CORE SECTION ("SMS, Bulk SMS & SMS API")
+    ══════════════════════════════════════════════════════════════════ -->
+    <section class="core-section" id="understanding-core" aria-label="Understanding SMS, Bulk SMS and SMS API">
+      <div class="container">
+
+        <!-- Centered Section Header -->
+        <div class="core-header text-center">
+          <span class="core-eyebrow"><span>Understanding the Core</span></span>
+          <h2 class="core-heading">SMS, Bulk SMS &amp; SMS API What You Need to Know</h2>
+          <p class="core-subtitle">
+            Sendgun brings together every flavour of SMS communication under one powerful platform.
+          </p>
+        </div>
+
+        <!-- 2-Column Content Row -->
+        <div class="row align-items-stretch g-4 g-lg-5">
+
+          <!-- Left Column: Portrait Image -->
+          <div class="col-lg-5">
+            <div class="core-media">
+              <img src="assets/images/core/core-photo.jpg"
+                   alt="Customer reading an SMS message on her smartphone outdoors"
+                   class="core-media__img" />
+            </div>
+          </div>
+
+          <!-- Right Column: Vertical Timeline List -->
+          <div class="col-lg-7">
+            <div class="core-timeline">
+
+              <!-- Item 1: SMS -->
+              <article class="core-item">
+                <div class="core-item__marker">
+                  <div class="core-item__icon-ring">
+                    <img src="assets/images/core/icon-sms.png" alt="" aria-hidden="true" />
+                  </div>
+                </div>
+                <div class="core-item__body">
+                  <h3 class="core-item__title">SMS</h3>
+                  <p class="core-item__desc">
+                    SMS (Short Message Service) is the standard text message sent from one mobile device to
+                    another. It&rsquo;s the most direct, reliable and universally accessible communication channel works
+                    on every phone, no internet required. With Sendgun, every SMS is delivered instantly via direct
+                    operator connections, ensuring the highest delivery rates across India.
+                  </p>
+                  <span class="core-item__pill">
+                    Perfect for transactional alerts, OTPs, and personal messages
+                  </span>
+                </div>
+              </article>
+
+              <!-- Item 2: Bulk SMS -->
+              <article class="core-item">
+                <div class="core-item__marker">
+                  <div class="core-item__icon-ring">
+                    <img src="assets/images/core/icon-bulk-sms.png" alt="" aria-hidden="true" />
+                  </div>
+                </div>
+                <div class="core-item__body">
+                  <h3 class="core-item__title">Bulk SMS</h3>
+                  <p class="core-item__desc">
+                    Bulk SMS refers to sending a large volume of SMS messages to many recipients at once
+                    typically used for marketing campaigns, announcements, reminders or mass alerts. With
+                    SendGun&rsquo;s Bulk SMS dashboard, you can upload a CSV list, schedule campaigns, segment
+                    audiences and track performance in real time.
+                  </p>
+                  <span class="core-item__pill">
+                    Ideal for promotions, offers, event notifications &amp; emergency alerts
+                  </span>
+                </div>
+              </article>
+
+              <!-- Item 3: SMS API -->
+              <article class="core-item">
+                <div class="core-item__marker">
+                  <div class="core-item__icon-ring">
+                    <img src="assets/images/core/icon-sms-api.png" alt="" aria-hidden="true" />
+                  </div>
+                </div>
+                <div class="core-item__body">
+                  <h3 class="core-item__title">SMS API</h3>
+                  <p class="core-item__desc">
+                    SMS API (Application Programming Interface) allows developers to integrate SMS capabilities
+                    directly into their software, websites or mobile apps. Instead of manually sending messages,
+                    you can automate transactional SMS (like OTPs, order updates, payment confirmations) via
+                    simple code. SendGun&rsquo;s REST API is developer-friendly,
+                  </p>
+                  <span class="core-item__pill">
+                    Built for automation, real-time triggers &amp; high volume integrations
+                  </span>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         GETTING STARTED SECTION ("Up and Running in Three Simple Steps")
+    ══════════════════════════════════════════════════════════════════ -->
+    <section class="steps-section" id="getting-started" aria-label="Getting Started in Three Simple Steps">
+      <div class="container position-relative">
+
+        <!-- Centered Section Header -->
+        <div class="steps-header text-center">
+          <span class="steps-eyebrow"><span>Getting Started</span></span>
+          <h2 class="steps-heading">Up and Running in Three Simple Steps</h2>
+          <p class="steps-subtitle">
+            No lengthy onboarding. No complex setup. Start sending SMS messages to your customers in under 15 minutes.
+          </p>
+        </div>
+
+        <!-- 3-Step Flow Grid -->
+        <div class="row g-4">
+
+          <!-- Step 01 -->
+          <div class="col-lg-4">
+            <div class="step-column">
+              <div class="step-column__top">
+                <span class="step-badge">Step - 01</span>
+                <div class="step-connector d-none d-lg-flex" aria-hidden="true">
+                  <span class="step-connector__dot"></span>
+                  <span class="step-connector__line"></span>
+                  <span class="step-connector__arrow"></span>
+                </div>
+              </div>
+              <article class="step-card">
+                <h3 class="step-card__title">Sign Up</h3>
+                <p class="step-card__desc">
+                  Create your free Sendgun account and receive your API credentials instantly. No credit card required
+                  to start.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="col-lg-4">
+            <div class="step-column">
+              <div class="step-column__top">
+                <span class="step-badge">Step - 02</span>
+                <div class="step-connector d-none d-lg-flex" aria-hidden="true">
+                  <span class="step-connector__dot"></span>
+                  <span class="step-connector__line"></span>
+                  <span class="step-connector__arrow"></span>
+                </div>
+              </div>
+              <article class="step-card">
+                <h3 class="step-card__title">Integrate</h3>
+                <p class="step-card__desc">
+                  Connect your application or website using our plug-and-play REST API. SDKs available for PHP, Python,
+                  Node.js and more.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="col-lg-4">
+            <div class="step-column">
+              <div class="step-column__top">
+                <span class="step-badge">Step - 03</span>
+              </div>
+              <article class="step-card">
+                <h3 class="step-card__title">Send &amp; Track</h3>
+                <p class="step-card__desc">
+                  Launch your campaign or automate transactional messages. Monitor delivery, open rates and responses
+                  in real time.
+                </p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       FOOTER (2-Column Sendgun Layout with Brand & Dual CTA)
+  ══════════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer" id="contact">
+    <div class="site-footer__grid-wrap">
+      <div class="container">
+        <div class="row g-0 align-items-center">
+
+          <!-- Column 1: Brand Info & Social Links (50% Width) -->
+          <div class="col-lg-6 site-footer__col site-footer__col--brand">
+            <a href="#" class="site-footer__brand" aria-label="Sendgun Home">
+              <img src="assets/images/dashboard/sendgun-logo-dark.png" alt="Sendgun" class="site-footer__logo" />
+            </a>
+            <p class="site-footer__desc">
+              India&rsquo;s most trusted bulk SMS and API platform &mdash; built for developers,
+              marketers and enterprise teams who demand reliability, compliance and scale.
+            </p>
+            <div class="site-footer__socials" aria-label="Social Media Links">
+              <a href="#" class="site-footer__social-link" aria-label="Facebook">
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="site-footer__social-link" aria-label="Instagram">
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="site-footer__social-link" aria-label="X">
+                <i class="bi bi-twitter-x" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="site-footer__social-link" aria-label="LinkedIn">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Get Started Dual CTA (50% Width) -->
+          <div class="col-lg-6 site-footer__col site-footer__col--cta">
+            <span class="site-footer__eyebrow"><span>Get Started Today</span></span>
+            <h2 class="site-footer__heading">
+              Ready to Transform Your Business<br />
+              Communication?
+            </h2>
+            <p class="site-footer__cta-desc">
+              Join over a million businesses and developers using SendGun to send high-impact
+              SMS campaigns, automate transactional alerts and connect with customers instantly
+              across every corner of India.
+            </p>
+            <div class="site-footer__cta-actions">
+              <a href="#leadForm" class="site-footer__btn-trial">
+                <span>Start Your Free Trial</span>
+                <span class="site-footer__btn-trial-arrow" aria-hidden="true">
+                  <i class="bi bi-arrow-up-right"></i>
+                </span>
+              </a>
+              <a href="#leadForm" class="site-footer__demo-btn">
+                <span>Schedule a Demo</span>
+                <span class="site-footer__demo-arrow" aria-hidden="true">
+                  <i class="bi bi-arrow-up-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Links Band (#EAEFFF · 4-Column Grid with Products, Resources, Why Choose Us, Contact) -->
+    <div class="site-footer__links-band">
+      <div class="container">
+        <div class="row g-0">
+
+          <!-- Products -->
+          <div class="col-lg-3 col-md-6 site-footer__links-col">
+            <h4 class="site-footer__links-title">Products</h4>
+            <ul class="site-footer__links-list">
+              <li><a href="#">SMS API</a></li>
+              <li><a href="#">Bulk SMS</a></li>
+              <li><a href="#">Transactional SMS</a></li>
+              <li><a href="#">OTP SMS</a></li>
+              <li><a href="#">Promotional SMS</a></li>
+              <li><a href="#">International SMS</a></li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="col-lg-3 col-md-6 site-footer__links-col">
+            <h4 class="site-footer__links-title">Resources</h4>
+            <ul class="site-footer__links-list">
+              <li><a href="#">API Documentation</a></li>
+              <li><a href="#">SMS Integration Guide</a></li>
+              <li><a href="#">DLT Registration Help</a></li>
+              <li><a href="#">Developer Resources SMS</a></li>
+              <li><a href="#">Compliance FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Why Choose Us -->
+          <div class="col-lg-3 col-md-6 site-footer__links-col">
+            <h4 class="site-footer__links-title">Why Choose Us</h4>
+            <ul class="site-footer__links-list">
+              <li><a href="#">Fast SMS Delivery</a></li>
+              <li><a href="#">DLT Compliant Platform</a></li>
+              <li><a href="#">Secure SMS API</a></li>
+              <li><a href="#">24/7 Technical Support</a></li>
+              <li><a href="#">High Delivery Success Rate</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 site-footer__links-col site-footer__links-col--contact">
+            <h4 class="site-footer__links-title">Contact</h4>
+            <ul class="site-footer__contact-list">
+              <li class="site-footer__contact-item">
+                <img src="assets/images/footer/icon-phone.png" alt="Phone" class="site-footer__contact-icon" />
+                <a href="tel:+919549509509" class="site-footer__contact-text">+91 9549 509 509</a>
+              </li>
+              <li class="site-footer__contact-item">
+                <img src="assets/images/footer/icon-email.png" alt="Email" class="site-footer__contact-icon" />
+                <a href="mailto:sales@sendgun.in" class="site-footer__contact-text">sales@sendgun.in</a>
+              </li>
+              <li class="site-footer__contact-item">
+                <img src="assets/images/footer/icon-location.png" alt="Location" class="site-footer__contact-icon" />
+                <span class="site-footer__contact-text">Jaipur, Rajasthan</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright Strip -->
+    <div class="site-footer__copyright">
+      <div class="container">
+        <p class="mb-0">Copyright&copy; 2026 Sendgun. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Smooth Transparent-to-Colored Navbar on Scroll -->
+  <script>
+    (function () {
+      const navbar = document.getElementById('mainNavbar');
+      if (!navbar) return;
+
+      let ticking = false;
+      const updateNavbar = () => {
+        navbar.classList.toggle('is-scrolled', window.scrollY > 30);
+        ticking = false;
+      };
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateNavbar);
+          ticking = true;
+        }
+      }, { passive: true });
+
+      updateNavbar();
+    })();
+  </script>
+
+</body>
+
+</html>
